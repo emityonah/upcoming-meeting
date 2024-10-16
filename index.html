@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Announcement</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="styles.css"> <!-- External styles -->
+</head>
+<body>
+    <div class="container">
+        <h2>Create a Meeting Announcement</h2>
+
+        <form id="announcementForm" class="announcement-form">
+            <div class="input-group">
+                <label for="date">Meeting Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="input-group">
+                <label for="time">Meeting Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="input-group">
+                <label for="description">Meeting Description</label>
+                <textarea id="description" name="description" placeholder="Enter meeting details" required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="secretCode">Room name</label>
+                <input type="text" id="secretCode" name="secretCode" placeholder="Generated code" required>
+            </div>
+
+            <button type="submit" class="submit-button">Announce Meeting</button>
+        </form>
+
+        <div id="announcementsContainer" class="announcements-container">
+            <h3>Upcoming Meetings</h3>
+            <ul id="announcementsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
