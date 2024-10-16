@@ -1,103 +1,70 @@
-/* Global font */
+/* styles.css */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f7f8;
+    background-color: #f7f7f7;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
     background-color: #fff;
-    padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 h2, h3 {
     color: #333;
+    text-align: center;
 }
 
 .announcement-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
 .input-group {
-    text-align: left;
-}
-
-label {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 0.5rem;
-    display: block;
+    margin-bottom: 15px;
 }
 
 input, textarea {
     width: 100%;
-    padding: 0.8rem;
-    border-radius: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 4px;
     font-size: 16px;
-    outline: none;
-    transition: border 0.2s;
-}
-
-input:focus, textarea:focus {
-    border-color: #007bff;
-}
-
-textarea {
-    resize: none;
 }
 
 .submit-button {
-    background-color: #007bff;
+    background-color: #4CAF50;
     color: white;
+    padding: 10px 20px;
     border: none;
-    padding: 0.8rem;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
 
 .announcements-container {
-    margin-top: 2rem;
-    text-align: left;
+    margin-top: 30px;
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 li {
-    background-color: #f4f4f4;
-    border-left: 4px solid #007bff;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-li p {
-    margin: 0.5rem 0;
-    font-size: 14px;
-    color: #555;
-}
-
-li .meeting-date {
-    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
